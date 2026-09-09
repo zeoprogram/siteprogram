@@ -30,3 +30,5 @@ Workshop
 15:00 - 16:00
 completed
 Rp150.000
+cd backend
+python seed.py
