@@ -112,24 +112,6 @@ class Booking(BaseModel):
 
 class BookingStatusUpdate(BaseModel):
     status: BookingStatus
-    GET  /api/bookings/meta
-POST /api/bookings
-GET  /api/bookings/track?q=...
-<Input
-  id="booking-date"
-  type="date"
-  required
-  min={meta?.today}
-  value={form.preferred_date}
-  onChange={(event) =>
-    setForm({
-      ...form,
-      preferred_date: event.target.value,
-    })
-  }
-/>
-
-
 class MetaResponse(BaseModel):
     today: str
     workshop_name: str
